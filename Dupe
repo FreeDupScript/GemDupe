@@ -13,7 +13,7 @@ local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'],
 if request then
     lib.Message.New("Dupe starting");
 else
-    lib.Message.New(request2 and "Something went wrong. Try again!");
+    lib.Message.New(request2 and "Hi People");
     return;
 end
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey) then
